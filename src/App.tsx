@@ -6,7 +6,7 @@ import { GetAllUsers } from './api/queries/queries'
 import "./api/client";
 function App() {
   const [count, setCount] = useState(0)
-  const users = GetAllUsers('/api/users', {
+  const users = GetAllUsers({
     params: {
       query: {
         page: ''
@@ -14,7 +14,7 @@ function App() {
       header: { "authorization": "Bearer SECRET" },
     },
   })
-  console.log(users.data?.users)
+  console.log(users.data)
   return (
     <>
       <div>

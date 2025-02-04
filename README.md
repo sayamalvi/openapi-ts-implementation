@@ -38,4 +38,4 @@ Define reusable functions for API calls using TanStack Query.
 Example: A function to fetch all users is implemented in [`quries.ts`](./src/api/hooks/hooks.ts).
 
 ## 5. Usage 
-Use the custom hook in a react component [`App.tsx`](./src/App.tsx)
+Use the function in react component [`App.tsx`](./src/App.tsx)
