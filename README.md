@@ -1,8 +1,38 @@
-1. Generate the types first, in my case I've created a script "npm generate", which is generating types from OpenAPI Spec in the src/types/types.ts file.
-2. Now we need to install some packages
-     npm install openapi-fetch (The API client, generates types directly from the OpenAPI schema.)
-     npm install -D openapi-typescript (used to generate types from OpenAPI Spec)
-     npm install -D openapi-typescript-helpers (utility package)
+# OpenAPI Integration with TanStack Query
 
-3. Setup the API client [link](./src/api/client.ts)
-4. Create custom tan stack query hooks. For demonstrating, I've creating GetAllUsers hook. [link](./src/api/hooks/hooks.ts)
+## 1. Generate TypeScript Types from OpenAPI
+
+To generate types from the OpenAPI specification, run the following script:
+
+```sh
+npm run generate
+```
+
+This will create the TypeScript definitions inside:
+
+```
+src/types/types.ts
+```
+
+## 2. Install Dependencies
+
+Install the required packages:
+
+```sh
+npm install openapi-fetch
+npm install -D openapi-typescript openapi-typescript-helpers
+```
+
+- **`openapi-fetch`**: API client that generates types directly from the OpenAPI schema.
+- **`openapi-typescript`**: Generates TypeScript types from the OpenAPI specification.
+- **`openapi-typescript-helpers`**: Provides utility functions for working with OpenAPI-generated types.
+
+## 3. Setup the API Client
+
+Configure the API client in [`client.ts`](./src/api/client.ts).
+
+## 4. Create Custom TanStack Query Hooks
+
+Define reusable hooks for API calls using TanStack Query.
+
+Example: A hook to fetch all users is implemented in [`hooks.ts`](./src/api/hooks/hooks.ts).
