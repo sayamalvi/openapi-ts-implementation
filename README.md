@@ -36,3 +36,6 @@ Configure the API client in [`client.ts`](./src/api/client.ts).
 Define reusable hooks for API calls using TanStack Query.
 
 Example: A hook to fetch all users is implemented in [`hooks.ts`](./src/api/hooks/hooks.ts).
+
+## 5. Usage 
+Use the custom hook in a react component [`App.tsx`](./src/App.tsx)
