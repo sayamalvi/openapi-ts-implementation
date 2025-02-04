@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { GetAllUsers } from './api/hooks/hooks'
+import { GetAllUsers } from './api/queries/queries'
 import "./api/client";
 function App() {
   const [count, setCount] = useState(0)

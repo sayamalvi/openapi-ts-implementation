@@ -31,11 +31,11 @@ npm install -D openapi-typescript openapi-typescript-helpers
 
 Configure the API client in [`client.ts`](./src/api/client.ts).
 
-## 4. Create Custom TanStack Query Hooks
+## 4. Create Custom TanStack Query Functions
 
-Define reusable hooks for API calls using TanStack Query.
+Define reusable functions for API calls using TanStack Query.
 
-Example: A hook to fetch all users is implemented in [`hooks.ts`](./src/api/hooks/hooks.ts).
+Example: A function to fetch all users is implemented in [`quries.ts`](./src/api/hooks/hooks.ts).
 
 ## 5. Usage 
 Use the custom hook in a react component [`App.tsx`](./src/App.tsx)
