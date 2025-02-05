@@ -8,17 +8,15 @@ export const myMiddleware: Middleware = {
   //     return request;
   //   },
   async onResponse({ request, response }) {
-    if (response.status === StatusCodes.UNAUTHORIZED) {
-      const data = await callRandomApi();
-      if (data) {
-        console.log(
-          "Data received from callRandomApi, retrying failed request"
-        );
-        const retryResponse = await fetch(request);
-        return retryResponse;
-      }
+    if (response.status !== StatusCodes.UNAUTHORIZED) {
+      return response;
     }
-    return response;
+    const data = await callRandomApi();
+    if (!data) {
+      return response;
+    }
+    console.log("Data received from callRandomApi, retrying failed request");
+    return fetch(request);
   },
   //   async onError({ error }) {
   //     // wrap errors thrown by fetch
