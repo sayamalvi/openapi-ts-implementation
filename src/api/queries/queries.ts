@@ -3,9 +3,12 @@ import { UseQueryOptions, useQuery } from "@tanstack/react-query";
 import { FetchOptions } from "openapi-fetch";
 import { paths } from "../types/types";
 
-type Params = Omit<FetchOptions<paths["/api/users"]["get"]>, "path">;
+type GetAllUsersParams = Omit<FetchOptions<paths["/api/users"]["get"]>, "path">;
 
-export function GetAllUsers(params: Params, rqOptions?: UseQueryOptions) {
+export function GetAllUsers(
+  params: GetAllUsersParams,
+  rqOptions?: UseQueryOptions
+) {
   return useQuery({
     queryKey: ["/api/users", params],
     queryFn: async () => {

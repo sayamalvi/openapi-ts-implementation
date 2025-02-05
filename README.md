@@ -35,7 +35,7 @@ Configure the API client in [`client.ts`](./src/api/client.ts).
 
 Define reusable functions for API calls using TanStack Query.
 
-Example: A function to fetch all users is implemented in [`quries.ts`](./src/api/hooks/hooks.ts).
+Example: A function to fetch all users is implemented in [`queries.ts`](./src/api/queries/queries.ts).
 
 ## 5. Usage 
 Use the function in react component [`App.tsx`](./src/App.tsx)
