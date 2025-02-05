@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate": "npx openapi-typescript rasoi.saudebazi.com --output src/api/types/types.ts"
+    "generate": "npx openapi-typescript https://rasoi.saudebazi.com/doc --output src/api/types/types.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",

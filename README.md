@@ -39,3 +39,9 @@ Example: A function to fetch all users is implemented in [`quries.ts`](./src/api
 
 ## 5. Usage 
 Use the function in react component [`App.tsx`](./src/App.tsx)
+
+## 6. Testing on your local machine
+1. Clone the repo
+2. npm i
+3. npm run dev
+4. check the network logs and console

@@ -14,7 +14,7 @@ function App() {
       header: { "authorization": "Bearer SECRET" },
     },
   })
-  console.log(users.data)
+  // console.log(users.data)
   return (
     <>
       <div>
